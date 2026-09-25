@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView android:text="دامنه‌های مجاز، هر خط یک دامنه"
+        android:textSize="13sp" android:textColor="@color/text_secondary"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <EditText android:id="@+id/inputDomains"
+        android:minLines="8" android:gravity="top|start" android:inputType="textMultiLine"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+</LinearLayout>

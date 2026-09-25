@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <EditText android:id="@+id/inputName" android:hint="اسم دلخواه، مثال: گوشی علی"
+        android:inputType="text"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <EditText android:id="@+id/inputIp" android:hint="آی‌پی، مثال 192.168.33.200"
+        android:inputType="text" android:layout_marginTop="12dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <EditText android:id="@+id/inputToken" android:hint="توکن / کد اتصال"
+        android:inputType="textVisiblePassword" android:layout_marginTop="12dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+</LinearLayout>

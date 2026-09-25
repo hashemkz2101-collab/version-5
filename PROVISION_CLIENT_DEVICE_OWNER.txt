@@ -1,0 +1,14 @@
+دستور تست Device Owner:
+
+adb devices
+
+adb install client-debug.apk
+
+سپس روی دستگاه آزمایشیِ تازه‌راه‌اندازی‌شده:
+
+adb shell dpm set-device-owner com.mahroch.client/.MahrochDeviceAdminReceiver
+
+بعد از آن برنامه Mahroch Client را باز کن و «فعال‌سازی مدیریت دائمی (Device Owner)» را بزن.
+
+برای برداشتن Device Owner در تست:
+adb shell dpm remove-active-admin com.mahroch.client/.MahrochDeviceAdminReceiver

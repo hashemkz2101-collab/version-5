@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_screen"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp" android:paddingBottom="12dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView android:text="Mahroch Manager"
+            android:textSize="24sp" android:textStyle="bold" android:textColor="@color/text_primary"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <TextView android:text="مدیریت کلاینت‌های ذخیره‌شده"
+            android:textSize="14sp" android:textColor="@color/text_secondary"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <Button android:id="@+id/addButton" android:text="+ افزودن کلاینت"
+                android:textColor="@color/on_accent" android:background="@drawable/bg_button_primary"
+                android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp"/>
+
+            <Button android:id="@+id/refreshButton" android:text="بروزرسانی وضعیت"
+                android:textColor="@color/accent_primary" android:background="@drawable/bg_button_outline"
+                android:layout_marginStart="10dp"
+                android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingStart="20dp" android:paddingEnd="20dp" android:paddingBottom="24dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/emptyState"
+                android:text="هنوز کلاینتی اضافه نشده. با دکمه «افزودن کلاینت» شروع کنید."
+                android:textSize="14sp" android:textColor="@color/text_secondary"
+                android:gravity="center" android:padding="30dp"
+                android:visibility="gone"
+                android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+            <LinearLayout android:id="@+id/clientList"
+                android:orientation="vertical"
+                android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

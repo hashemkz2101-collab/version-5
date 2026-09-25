@@ -1,0 +1,7 @@
+1) Android Studio را باز کن.
+2) همین پوشه را Open کن.
+3) Gradle Sync.
+4) برای Client: :client:assembleDebug
+5) برای Manager: :manager:assembleDebug
+
+هسته tun2socks از Maven Central دریافت می‌شود، پس اولین Sync به اینترنت نیاز دارد.
